@@ -1,0 +1,121 @@
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 3.25rem;
+}
+
+h3 {
+  margin: 2rem 0 1rem 0;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+h4 {
+  font-weight: normal;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  text-transform: uppercase;
+  color: #666;
+  letter-spacing: 1px;
+}
+
+p,
+ol {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
+li {
+  margin-bottom: 0.625rem;
+}
+
+small {
+  font-size: 0.85rem;
+}
+
+a {
+  color: #0043ce;
+  text-decoration: none;
+}
+
+.button-splash p {
+  margin-bottom: 18px;
+}
+
+.button-splash {
+  background-color: rgba(255, 255, 255, 0.2);
+  justify-content: flex-start;
+  color: #ffffff;
+  transition: 0.2s all ease-in-out;
+}
+
+.button-splash:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  justify-content: space-between;
+  color: #191919;
+}
+
+.card-tag {
+  text-transform: capitalize;
+  font-size: 0.875rem;
+}
+
+.sticky-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.semi-b  {
+  font-weight: 600;
+}
+
+.fade {
+  transition: 0.2s all ease-in-out;
+}
+
+.kazoo {
+  color: #0043ce;
+}
+
+.bg-kazoo {
+  background-color: #0043ce;
+}
+
+.hover-bg-kazoo:hover {
+  background-color: #0043ce;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+  object-position: center top;
+}
+
+.general-tag-color {
+  color: #fa4d56;
+}
+
+.advanced-tag-color {
+  color: #00726e;
+}
+
+.notes-color {
+  color: #666;
+}
+
+.chapter-breadcrumb {
+  text-transform: uppercase;
+  color: #666;
+  letter-spacing: 1px;
+  font-size: 0.83rem;
+  font-weight: bold;
+}
