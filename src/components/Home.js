@@ -81,50 +81,6 @@ export default class Home extends React.Component {
                 <h4>· Lorem ipsum dolor sit amet</h4>
                 <h4>· Lorem ipsum dolor sit amet, consectetur adipi.</h4>
               </ChapterCard>
-
-              <ChapterCard
-                idRef="1_2"
-                chapNum="2"
-                audience="2020, June"
-                readTime=""
-                title="Second release"
-                coverImg={img2}
-              >
-                <h4>· Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
-                <h4>· Lorem ipsum dolor sit amet</h4>
-                <h4>· Lorem ipsum dolor sit amet, consectetur adipi.</h4>
-              </ChapterCard>
-
-              <ChapterCard
-                idRef="1_3"
-                chapNum="3"
-                audience="2020, September"
-                readTime=""
-                title="Third release"
-                coverImg={img3}
-              >
-                <h4>· Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
-                <h4>· Lorem ipsum dolor sit amet</h4>
-                <h4>· Lorem ipsum dolor sit amet, consectetur adipi.</h4>
-              </ChapterCard>
-
-              <div className="mt6 mb4 bg-light-gray" style={{ height: '1px' }} />
-
-              <h5 className="gray o-70" id="module02">
-                Development oriented releases
-              </h5>
-              <h4 className="mb2 gray semi-b mt3">Lorem ipsum</h4>
-              <p className="kazoo">Not published yet.</p>
-
-              <div className="mv4 bg-light-gray" style={{ height: '1px' }} />
-
-              <h5 className="gray o-70" id="module03">
-                Other category of releases
-              </h5>
-              <h4 className="mb2 gray semi-b mt3">Lorem ipsum</h4>
-              <p className="kazoo">Not published yet.</p>
-
-              <div className="mt4 mb6 bg-light-gray" style={{ height: '1px' }} />
             </div>
 
             <div className="ml4-l w-40-l dn db-l">

@@ -42,7 +42,7 @@ export default class Footer extends React.Component {
         </div>
         <div>
           <>
-            {idRef === '1_3' ? (
+            {idRef === '1_1' ? (
               <div className="h-100 vw-50 bl kazoo" />
             ) : (
               <Link to={`/chapter/${next}`} className="no-underline">

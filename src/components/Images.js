@@ -5,7 +5,7 @@ export default class Images extends React.Component {
     const { image, caption, title, alt } = this.props
 
     return (
-      <div className="mv5 pa5">
+      <div className="mb4 mt6">
         <img src={image} className="mb3" alt={alt} />
         <h5 className="mb2">{title}</h5>
         <small className="lh-copy">{caption}</small>
