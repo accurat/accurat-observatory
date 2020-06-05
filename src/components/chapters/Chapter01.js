@@ -17,10 +17,9 @@ export default class Chapter01 extends React.Component {
   render() {
     return (
       <div>
-        <p className="chapter-breadcrumb mt4 mb2">Aprile 2020</p>
+        <p className="chapter-breadcrumb mt4 mb2">Giugno 2020</p>
         <div>
-          <h2>Titolo titolo titolo</h2>
-          <p>Introduzione da scrivere</p>
+          <h2>First release</h2>
 
           <Images image={img1_01} caption="" alt="" />
           <h3>Outbreak - Melting Asphalt</h3>

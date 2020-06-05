@@ -31,55 +31,45 @@ export default class Home extends React.Component {
               </h3>
               <h2>The data visualization observatory</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
-                <br />
-                <br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                officia deserunt mollit anim id est laborum.
-                <br />
-                <br />
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
-                <br />
-                <br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                officia deserunt mollit anim id est laborum.
-                <br />
-                <br />
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
+                Grazie alla vastissima quantità di dati che ad oggi siamo in grado di raccogliere e
+                alla semplificazione dei processi tecnologici avvenuta negli ultimi anni, la data
+                visualization è un campo di ricerca in notevole espansione e di interesse globale.
+                Rappresentando i dati si cerca di dare una forma più comprensibile a tutto ciò che
+                viene misurato e tracciato in modo da far emergere evidenze e domande che altrimenti
+                sarebbe stato molto più difficile scovare. La visualizzazione dati non è una
+                disciplina che risulta sempre immediata proprio per via della sua relativa
+                giovinezza, soprattutto quando si cerca di rappresentare fenomeni complessi che
+                necessitano di soluzioni ad hoc per poter essere compresi esaustivamente.
+                L’Osservatorio Dataviz è un’iniziativa di Accurat pensata e progettata per Loccioni
+                in cui viene presentata una selezione di lavori interessanti e innovativi nel campo
+                della visualizzazione dati. Gli aggiornamenti avvengono su base mensile ed includono
+                una selezione progetti rilevanti, di recente rilascio e non. L’Osservatorio permette
+                di seguire le novità in materia al fine di sviluppare dimestichezza con le diverse
+                modalità e forme di rappresentazione visiva. Sviluppare una sensibilità verso la
+                rappresentazione dei dati permette di comprendere meglio la necessità di creare
+                strumenti e processi che siano in grado di restituire tutte le sfumature delle
+                misurazioni effettuate. La possibilità di dare risalto ai valori più significativi
+                permette di rendere più dense di significato le piattaforme nelle quali i dati
+                vengono mostrati e raccontati. I progetti presentati saranno di natura diversa in
+                modo da offrire una panoramica quanto più ampia possibile sia dal punto di vista
+                argomentativo che da quello visivo e tecnico. Si tratta di un buon punto di partenza
+                per chi, già appassionato o interessato a questi artefatti, abbia interesse ad
+                approfondire le proprie conoscenze in questo ambito.
               </p>
 
               <ChapterCard
                 idRef="1_1"
                 chapNum="1"
-                audience="2020, April"
+                audience="2020, June"
                 readTime=""
                 title="First release"
                 coverImg={img1}
               >
-                <h4>· Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
-                <h4>· Lorem ipsum dolor sit amet</h4>
-                <h4>· Lorem ipsum dolor sit amet, consectetur adipi.</h4>
+                <h4>· Outbreak- Melting Asphalt</h4>
+                <h4>· Communicating Model Uncertainty Over Space</h4>
+                <h4>· Data Visualization as an act of Witnessing</h4>
+                <h4>· Treinverkeer in Nederland</h4>
+                <h4>· Made in Fukushima</h4>
               </ChapterCard>
             </div>
 
