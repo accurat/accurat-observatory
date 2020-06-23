@@ -19,7 +19,7 @@ export default class Chapter01 extends React.Component {
       <div>
         <p className="chapter-breadcrumb mt4 mb2">Giugno 2020</p>
         <div>
-          <h2>First release</h2>
+          <h2>Numero 01</h2>
 
           <Images image={img1_01} caption="" alt="" />
           <h3>Outbreak - Melting Asphalt</h3>
@@ -110,36 +110,6 @@ export default class Chapter01 extends React.Component {
               href="https://medium.com/nightingale/data-visualization-as-an-act-of-witnessing-33e346f5e437"
               target="blank"
             >
-              Vai al progetto →
-            </a>
-          </p>
-
-          <Images image={img1_04} caption="" alt="" />
-          <h3>Treinverkeer in Nederland</h3>
-          <p>
-            Il progetto, realizzato da Jan Willem Tulp, visualizza i treni delle ferrovie olandesi e
-            la loro posizione durante le ore del giorno. Un classico esempio di visualizzazione
-            sistemica in cui molti oggetti si muovono all’interno di una rete per permettere un
-            controllo visivo di ciò che accade in diversi momenti della giornata. Questo tipo di
-            visualizzazioni permettono di capire, ad un occhio esperto, se il flusso è regolare o
-            bisogna intervenire sulle tratte ferroviarie per agevolare eventuali problematiche. Sono
-            spesso corredate da altre analisi ed è possibile trovarle all’interno di dashboard di
-            controllo nelle quali concorrono alla definizione e rappresentazione di uno scenario
-            complesso in tempo reale. In questo caso il dato è solamente simulato ma è possibile
-            modificare l’orario per confrontare diversi momenti della giornata. La visualizzazione
-            giornaliera è invece un vero e proprio esperimento. Un modello circolare che espone gli
-            orari di tutti i treni che transitano da una stazione su 24h, originariamente pensato in
-            due dimensioni da E.J. Marey nel 1885. I modelli visivi più particolari necessitano
-            spesso di una lenta curva di apprendimento per essere decodificati correttamente,
-            permettono però una specificità molto più alta se è necessario controllare variazioni
-            minime o che necessitano di confrontare contemporaneamente più aree di un problema. I
-            modelli visivi specifici permettono spesso di simulare determinate condizioni e scenari
-            o ne rappresentano vari, così da prefigurare quali potrebbero essere gli sviluppi di una
-            determinata situazione, in questo modo è possibile utilizzarli a supporto di analisi e
-            decisioni.
-            <br />
-            <br />
-            <a href="https://www.nsjaarverslag.nl/" target="blank">
               Vai al progetto →
             </a>
           </p>

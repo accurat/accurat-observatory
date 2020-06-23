@@ -62,13 +62,12 @@ export default class Home extends React.Component {
                 chapNum="1"
                 audience="2020, June"
                 readTime=""
-                title="First release"
+                title="Numero 01"
                 coverImg={img1}
               >
                 <h4>· Outbreak- Melting Asphalt</h4>
                 <h4>· Communicating Model Uncertainty Over Space</h4>
                 <h4>· Data Visualization as an act of Witnessing</h4>
-                <h4>· Treinverkeer in Nederland</h4>
                 <h4>· Made in Fukushima</h4>
               </ChapterCard>
             </div>
