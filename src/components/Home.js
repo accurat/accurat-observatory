@@ -70,6 +70,19 @@ export default class Home extends React.Component {
                 <h4>· Data Visualization as an act of Witnessing</h4>
                 <h4>· Made in Fukushima</h4>
               </ChapterCard>
+              <ChapterCard
+                idRef="1_2"
+                chapNum="2"
+                audience="2020, July"
+                readTime=""
+                title="Numero 02"
+                coverImg={img2}
+              >
+                <h4>· Treinverkeer in Nederland</h4>
+                <h4>· A visual introduction to machine learning</h4>
+                <h4>· The evolution of the American Census</h4>
+                <h4>· Explore the city on a human scale</h4>
+              </ChapterCard>
             </div>
 
             <div className="ml4-l w-40-l dn db-l">

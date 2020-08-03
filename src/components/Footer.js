@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const chaptersTitles = {
   '1_1': { module: '2020, April', title: 'Release 1' },
-  '1_2': { module: '2020, June', title: 'Release 2' },
+  '1_2': { module: '2020, July', title: 'Release 2' },
   '1_3': { module: '2020, September', title: 'Release 3' },
 }
 
@@ -42,7 +42,7 @@ export default class Footer extends React.Component {
         </div>
         <div>
           <>
-            {idRef === '1_1' ? (
+            {idRef === '1_2' ? (
               <div className="h-100 vw-50 bl kazoo" />
             ) : (
               <Link to={`/chapter/${next}`} className="no-underline">

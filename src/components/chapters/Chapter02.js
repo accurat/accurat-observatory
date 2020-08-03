@@ -2,9 +2,10 @@ import React from 'react'
 import Images from '../Images'
 import Notes from '../Notes'
 
-import img2_01 from '../../assets/M1_C2_img01.jpg'
-import img2_02 from '../../assets/M1_C2_img02.jpg'
-import img2_03 from '../../assets/M1_C2_img03.jpg'
+import img2_01 from '../../assets/R2_img01.png'
+import img2_02 from '../../assets/R2_img02.png'
+import img2_03 from '../../assets/R2_img03.png'
+import img2_04 from '../../assets/R2_img04.png'
 
 export default class Chapter02 extends React.Component {
   componentDidMount() {
@@ -15,161 +16,131 @@ export default class Chapter02 extends React.Component {
   render() {
     return (
       <div>
-        <p className="chapter-breadcrumb mt4 mb2">Chapter 2</p>
+        <p className="chapter-breadcrumb mt4 mb2">Luglio 2020</p>
         <div>
-          <h2>The Purpose of Data Visualization</h2>
-          {/* <Images image={img2_01} caption="Data Visualization at every step of the project." /> */}
-          <p>
-            This chapter highlights the purpose of using a visual display of data in the three main
-            contexts where Data Visualization can play a pivotal role. You will learn about using
-            Data Visualization as a trigger at the very beginning of a project, enabling you to
-            initiate your analysis; during the process as a tool to elaborate the data, gain
-            insights, set milestones, revise your protocols and methods; and finally at the end of
-            the analysis, as an effective support for communicating your results, and explaining
-            them to other people with different backgrounds.
-          </p>
-          <h3>Considering data visualization as a design process</h3>
-          <p>
-            Before plunging into the details, it is important to frame the discipline of Data
-            Visualization as an iterative process that is activated to serve a specific purpose.
-            Like all the branches of design, Data Visualization should always be oriented towards a
-            goal, more specifically to address a problem, help humans understand it and eventually
-            (hopefully) solve it. As it belongs to the realm of vision, the design of a data
-            visualization also concerns the aesthetic components of the artifact. This aspect should
-            not be considered as a mere artistic exercise, but rather as an excellent way to capture
-            the readers’ attention and to guide them through the information. The visual appearance
-            of the visualization can really have a crucial impact on both the effectiveness of the
-            data display as well as on all things which concern the information’s accessibility, and
-            should not be underestimated.
-          </p>
-          <Images
-            image={img2_01}
-            caption="Data Visualization as an iterative design process."
-            alt="Data Visualization as an iterative design process."
-          />
-          <p>
-            The practice of Data Visualization is a design process, as a bare visual representation
-            this process doesn’t directly solve anything: it is from our reading and understanding
-            of the representation that we generate insights and consequently formulate thoughts,
-            whether these are knowledge, strategies, decisions or actions to be taken. Because these
-            considerations can emerge at any given point of the process, the design object can
-            constantly be re-evaluated, hence re-designed and tested again. These are the
-            requirements for an iterative design process that loops from design to prototype to
-            evaluation and back to design. During a research project it’s very common to obtain
-            materials —in this case your data— along the way, and to obtain them with incremental
-            refinement. The same will probably happen to your data visualization: you start from a
-            first idea, draft it, evaluate it and then enrich your initial idea with new ideas and
-            make a new draft.
-            <br />
-            <br />
-            Potentially, this process could be infinite and never reach a perfect final state,
-            nevertheless this iterative evolution will ensure your visualization reaches a version
-            which strikes a balance between what needs to be understood and what can be read in it.
-            Quoting Mike Monteiro’s Design is a Job,{' '}
-            <i>
-              “whether you are helping to launch a new business from scratch, or making incremental
-              changes to an existing product, or anything in between, every design task that you
-              will undertake must serve a goal. It is your job to find out what those goals are”
-            </i>
-            , because they are the very reasons for which the design process is initiated. As seen
-            in the previous chapter, you could start by defining the necessity that you are trying
-            to address, or the question which you are trying to answer through your data
-            visualization.
-          </p>
+          <h2>Numero 02</h2>
 
-          <h3>The role of data visualization in the decision process</h3>
+          <Images image={img2_01} caption="" alt="" />
+          <h3>Treinverkeer in Nederland</h3>
           <p>
-            Now that you can think of data visualization as a design process, let’s see where we can
-            place it within the decision-making process. When can you use data visualization to
-            analyze a subject, understand it and eventually reach your goal? First of all,
-            visualizing information means making it readily available for the visual system. Human
-            perception is triggered to find relations between the elements of the visualization,
-            allowing us to read the information, how it is organized and which values are
-            represented. Once the information is perceived, the brain elaborates it and the result
-            —in an ideal/optimal case— is that we can understand and make sense of it. This is
-            crucial in order to understand a subject, and is what translates a phenomenon from
-            abstract to tangible, in order that we may be able to actively use it to make decisions.
-            One of the explanatory videos concerning Jacques Bertin’s techniques, states that{' '}
-            <i>“It’s not a matter of accumulating knowledge, it’s a matter of organizing it”</i>,
-            and this is what data visualization should be, a discipline used to create different
-            point of view and insights on a subject.
-          </p>
-
-          <Notes>
-            <a
-              href="https://youtu.be/RZzjuma2F-E"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline-hover"
-            >
-              Go to video: Bébert et la Graphique ↗
+            Il progetto, realizzato da Jan Willem Tulp, visualizza i treni delle ferrovie olandesi e
+            la loro posizione durante le ore del giorno. Un classico esempio di visualizzazione
+            sistemica in cui molti oggetti si muovono all’interno di una rete per permettere un
+            controllo visivo di ciò che accade in diversi momenti della giornata. Questo tipo di
+            visualizzazioni permettono di capire, ad un occhio esperto, se il flusso è regolare o
+            bisogna intervenire sulle tratte ferroviarie per agevolare eventuali problematiche. Sono
+            spesso corredate da altre analisi ed è possibile trovarle all’interno di dashboard di
+            controllo nelle quali concorrono alla definizione e rappresentazione di uno scenario
+            complesso in tempo reale. In questo caso il dato è solamente simulato ma è possibile
+            modificare l’orario per confrontare diversi momenti della giornata. La visualizzazione
+            giornaliera è invece un vero e proprio esperimento. Un modello circolare che espone gli
+            orari di tutti i treni che transitano da una stazione su 24h, originariamente pensato in
+            due dimensioni da E.J. Marey nel 1885. I modelli visivi più particolari necessitano
+            spesso di una lenta curva di apprendimento per essere decodificati correttamente,
+            permettono però una specificità molto più alta se è necessario controllare variazioni
+            minime o che necessitano di confrontare contemporaneamente più aree di un problema. I
+            modelli visivi specifici permettono spesso di simulare determinate condizioni e scenari
+            o ne rappresentano vari, così da prefigurare quali potrebbero essere gli sviluppi di una
+            determinata situazione, in questo modo è possibile utilizzarli a supporto di analisi e
+            decisioni. <br />
+            <br />
+            <a href="https://www.nsjaarverslag.nl/" target="blank">
+              Vai al progetto →
             </a>
-          </Notes>
-
-          <p>
-            There is no universal position for data visualization in the decision process. Still, it
-            can be very useful to use it as a starting point, because it could provide the first
-            general idea, a first overview of the environment that you are working on. Being able to
-            see the initial corpus of data is often instrumental in setting up the analysis. You
-            will also discover the advantages of using it repeatedly during your process, while
-            refining your insights and handling eventual emerging issues. As your analysis evolves,
-            inevitably the visualization of the evolving data or of the objectives will do so too.
-            This could be limited to an update of the same chart, or deciding to design different
-            charts to see different aspects of the data. Every analysis can be unique, and this has
-            great potential; you can design a different set of visual representations each time,
-            each one most suited to your specific goals and your specific data. The power that lies
-            within is that data visualization becomes a tool of fundamental support to your
-            research, which clarifies what’s going on, and by doing so it speeds up the whole
-            process and helps you reach a conclusion. Lastly, once the research is concluded,
-            presenting your results in a visual form through data visualization has proven to be an
-            excellent way to effectively communicate with stakeholders and the public alike, as they
-            gain direct visual access to the data.
           </p>
-          <Images
-            image={img2_02}
-            caption="The New York Times - Mapping Migration in the United States. By Gregor Aisch and Robert
-            Gebeloff."
-            alt="The New York Times - Mapping Migration in the United States. By Gregor Aisch and Robert
-            Gebeloff."
-          />
-          <Images
-            image={img2_03}
-            caption="Simulated Dendrochronology of U.S. Immigration. By Pedro M. Cruz and John Wihbey."
-            alt="Simulated Dendrochronology of U.S. Immigration. By Pedro M. Cruz and John Wihbey."
-          />
 
-          <h3>Dataviz as exploration and as a way to explain concepts</h3>
+          <Images image={img2_02} caption="" alt="" />
+          <h3>A visual introduction to machine learning</h3>
           <p>
-            We saw how visualizing information can be useful to understand a subject, and as it will
-            help you during the process it can be helpful for other people as well. You should use
-            it as a medium to convey a message, to present the process that led you to your
-            conclusions and to validate your choices. Data visualization can be your biggest ally in
-            explaining the decisions that were taken and the outcomes they create. In order to do
-            this properly you must have a goal in mind, you need to have clear what you want to
-            represent and why, and to help you understand how to present your work you should try to
-            understand the environment you are working in as much as possible. The following list is
-            meant to be a guide, a series of questions that you can ask yourself before and whilst
-            designing the data visualization in order to identify the context in which you are, to
-            structure the visualization you want to create and to understand what is the best way to
-            present it.
+            L’articolo di R2D3 spiega il funzionamento della tecnica statistical learning per
+            identificare automaticamente dei pattern all’interno dei dati. Il testo è organizzato
+            come un lungo scroll verticale supportato dalle visualizzazioni. I dati mostrati sono
+            utili a esplicitare ciò che viene spiegato nel testo. Le visualizzazioni non sfruttano
+            modelli visivi sperimentali, si tratta principalmente di barchart, scatterplot e pie
+            chart che mostrano in maniera chiara come gli stessi dati possano essere organizzati con
+            modelli differenti. È sempre importante scegliere il tipo di visualizzazione che riesce
+            a evidenziare meglio le particolarità del dataset che si sta rappresentando in funzione.
+            La finalità di questo progetto è divulgativa e infatti, in tutta la pagina i modelli
+            visivi si caratterizzano come supporto cognitivo fondamentale per rendere la
+            comprensione rapida ed efficace e aiutare l’assimilazione delle informazioni nella
+            maniera più corretta. Il testo tratta di un argomento molto tecnico e specifico ma
+            tramite le visualizzazioni può essere facilmente compreso anche da chiunque abbia
+            dimestichezza con la rappresentazione dei dati, la scelta di modelli semplici e
+            conosciuti è strategica nel raggiungimento di questo obiettivo. I valori, riorganizzati
+            via via in modelli differenti, sfruttano delle animazioni legate allo scroll che
+            permettono di seguire gli spostamenti di ogni oggetto visualizzando tutti i passaggi che
+            il modello statistico sfrutta per catalogare le informazioni.
+            <br />
+            <br />
+            <a href="http://www.r2d3.us/visual-intro-to-machine-learning-part-1/" target="blank">
+              Vai al progetto →
+            </a>
           </p>
-          <ol>
-            <li>
-              What kind of audience are you addressing? Think about their skills, job or knowledge
-              of the topic, think about the characteristics of the people that will see your outcome
-              and consider them as the primary users, not yourself.
-            </li>
-            <li>
-              What kind of format are you going to use? PowerPoint presentations, interactive
-              applications or step-by-step narrative explanations are three ways that can be used to
-              communicate the same content, try to understand which can work better and why.
-            </li>
-            <li>
-              What is the context? A presentation to developers is very different from one
-              addressing CEO’s, this can drastically affect how to communicate the same message.
-              Keep in mind how much time and attention you’ll have before creating a visualization.
-            </li>
-          </ol>
+
+          <Images image={img2_03} caption="" alt="" />
+          <h3>The evolution of the American Census</h3>
+          <p>
+            The Pudding in occasione del censimento americano del 2020 ha progettato un elaborato
+            che visualizza l’evoluzione del censimento dal 1790 fino all’ultima edizione. È un
+            lavoro innovativo soprattutto per l’utilizzo dei dati come base del racconto
+            dell’evoluzione degli Stati Uniti negli ultimi 230 anni, I dati analizzati non sono i
+            dati emersi dalle domande del censimento bensì le domande stesse e come queste si sono
+            modificate nel tempo, quali sono state scorporate, quali escluse e quali aggiunte. La
+            visualizzazione si compone di unico flow verticale che permette di verificare le
+            categorie delle domande e immagini di come queste venivano presentate all&apos;interno
+            del questionario. In questa visualizzazioni sono i dati stessi e come essi vengono
+            presentati a raccontare una storia, non sono un aiuto o un supporto ma permettono di
+            esplorare in ordine sparso tutte le informazioni tramite una gerarchia visiva definita.
+            I dati sono una traccia di un avvenimento, analizzare le domande evidenzia l’attenzione
+            dello stato rispetto alla composizione della popolazione evidenziando i cambiamenti
+            della società nel tempo. È possibile, all’inizio del flow, selezionare una storia in
+            modo che gli insight mostrati nella pagina si modifichino per sottolineare determinati
+            aspetti del racconto. Così facendo il taglio editoriale della vicenda sposta il focus su
+            un determinato aspetto della storia americana.
+            <br />
+            <br />
+            <a
+              href="https://pudding.cool/2020/03/census-history/#:~:text=They%20depict%20an%20evolving%20country,armed%20conflicts%20in%20its%20memory."
+              target="blank"
+            >
+              Vai al progetto →
+            </a>
+          </p>
+
+          <Images image={img2_04} caption="" alt="" />
+          <h3>Explore the city on a human scale</h3>
+          <p>
+            Morphocode ha sviluppato un tool che permette di esplorare la città solamente a un
+            livello di zoom molto alto dando informazioni sul tessuto urbano in un cerchio di
+            massimo 1 miglio di raggio. Il progetto visualizza un grande quantità di dati relativi
+            alla città di New York su una mappa. L’aspetto anticonvenzionale è rappresentato proprio
+            dalla costrizione della “lente” attraverso cui i dati sono visibili. Visualizzare le
+            informazioni su una mappa è una delle più antiche forme di datavisualization, anche le
+            mappe geografiche in una certa misura sono interpretazioni di dati, in questo caso il
+            focus è spostato all’interno dell’area selezionata. La mappa è supportata da grafici
+            convenzionali a sinistra della stessa, questi chart sono interattivi, modificando l’area
+            selezionata cambiano anche i dati all’interno delle visualizzazioni. In questo modo è
+            molto semplice notare le composizioni dei diversi quartieri della città, quanto sia alta
+            la concentrazione di persone o parchi in una determinata zona. Il progetto permette un
+            buon livello di personalizzazione consentendo ai vari utenti di esplorare le
+            informazioni specifiche a cui sono interessati. Una visualizzazione in cui i dati non
+            sono tutti disponibili dal primo momento spinge l’utente a interagire con lo strumento
+            per esplorare le viste a disposizione. In questo modo è probabile che un utente motivato
+            spenda molto tempo per provare a scoprire nuovi aspetti del dataset che sta indagando.
+            Nelle mappe geografiche gli utenti hanno spesso bisogno di elementi che risultino
+            familiari per non essere confusi su ciò che stanno vedendo, come ad esempio le strade, i
+            profili delle rive, l’estensione dei parchi... Questa necessità rende complicato
+            visualizzare dataset molto densi di informazioni. La soluzione della “lente” risulta
+            vincente anche in questo caso, delimita l’area in cui sono mostrate le visualizzazioni
+            permettendo un’alta complessità di rappresentazione dal momento che è possibile
+            riconoscere la parte di città in cui ci si trova dalle zone in cui i dati non sono
+            visualizzati.
+            <br />
+            <br />
+            <a href="https://explorer.morphocode.com/map" target="blank">
+              Vai al progetto →
+            </a>
+          </p>
         </div>
       </div>
     )
