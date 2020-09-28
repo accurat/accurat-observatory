@@ -1,11 +1,11 @@
 import React from 'react'
 import Images from '../Images'
-// import Notes from '../Notes'
+import Notes from '../Notes'
 
-import img3_01 from '../../assets/M1_C3_img01.jpg'
-import img3_02 from '../../assets/M1_C3_img02.jpg'
-import img3_03 from '../../assets/M1_C3_img03.jpg'
-import img3_04 from '../../assets/M1_C3_img04.jpg'
+import img3_01 from '../../assets/R3_img01.png'
+import img3_02 from '../../assets/R3_img02.png'
+import img3_03 from '../../assets/R3_img03.png'
+import img3_04 from '../../assets/R3_img04.png'
 
 export default class Chapter03 extends React.Component {
   componentDidMount() {
@@ -16,115 +16,128 @@ export default class Chapter03 extends React.Component {
   render() {
     return (
       <div>
-        <p className="chapter-breadcrumb mt4 mb2">Chapter 3</p>
+        <p className="chapter-breadcrumb mt4 mb2">Agosto 2020</p>
         <div>
-          <h2>The Value of Data Visualization</h2>
+          <h2>Numero 03</h2>
 
-          {/* <Images
-            image={img3_01}
-            caption="Comparison between focusing on one layer of information or on a selected area of the visualization."
-          /> */}
+          <Images image={img3_01} caption="" alt="" />
+          <h3>Coronavirus tracked: the latest figures as countries fight Covid-19 resurgence</h3>
+          <p>
+            Il Financial Times aggiorna regolarmente le proprie visualizzazioni legare al Covid-19
+            ed è uno dei migliori esempi di rappresentazioni legate a questo tema. In questi mesi i
+            dati hanno spesso accompagnato le notizie riguardo alla pandemia e sono state progettate
+            molte visualizzazioni per spiegarli ed esporli al meglio. In molti casi le dataviz
+            prodotte sono povere di significato perché si limitano ad esporre i dati in maniera
+            agnostica, senza dare un taglio o una lettura di qualche tipo, senza aiutare
+            l&apos;utente a comprendere ciò che sta leggendo. Lo scroll down del Financial Times
+            dimostra come con pochi accorgimenti anche dei modelli statici possono aiutare a leggere
+            le informazioni dando un impatto visivo molto forte all&apos;artefatto. Tutte le
+            visualizzazioni all&apos;interno della pagina sono prodotte a partire da modelli
+            classici, l&apos;oggetto più inusuale è lo streamgraph che si incontra subito dopo il
+            paragrafo introduttivo. Un elemento degno di nota, valido per tutte le figure meno una,
+            è il fatto che queste risultino così chiare da non necessitare una legenda. Quando è
+            necessario evidenziare un determinato aspetto del grafico questo è citato nel testo, in
+            modo che l&apos;utente sappia già come orientarsi quando affronta la viz. È un
+            bell&apos;esempio di come, con dei modelli statici e un effort relativamente limitato,
+            si possa rappresentare e raccontare un fenomeno complesso, facendo emergere i dati più
+            importanti riguardo alla vicenda. La semplicità delle figure permette inoltre che queste
+            possano rimanere sostanzialmente invariate fra la versione mobile e quella desktop
+            consentendo in entrambi i casi un buon livello di leggibilità.
+            <br />
+            <br />
+            <a
+              href="https://www.ft.com/content/a2901ce8-5eb7-4633-b89c-cbdf5b386938"
+              target="blank"
+            >
+              Vai al progetto →
+            </a>
+          </p>
 
+          <Images image={img3_02} caption="" alt="" />
+          <h3>The True Colors of America&apos;s Political Spectrum Are Gray and Green</h3>
           <p>
-            There is a common tendency to think that we need to simplify in order to understand.
-            Data visualization is often considered a way to simplify a concept to make it more
-            understandable, but this is a misconception, sometimes caused by a misuse of the
-            artifact. The power of data visualization lies in not having to simplify, because to
-            simplify is to reduce and cut down, and this is contradictory to the need to fully
-            understand. The value of data visualization resides in the ability to make a subject
-            more consumable and clear via visual means, and sometimes to access complexity and to
-            reflect the original structure of data within a big/comprehensive picture.
+            L&apos;articolo del New Yorker riguardo alla ripartizione dei voto nelle elezioni
+            americane del 2016 vuole evidenziare un aspetto di cui spesso si è sentito parlare nella
+            sfida elettorali tra Hillary Clinton e Donald Trump in cui la vittoria di
+            quest&apos;ultimo fu caratterizzata dai voti ottenuti nelle periferie e nelle zone
+            rurali degli Stati Uniti. A partire da immagini aeree sono state create delle fasce che
+            dividono il territorio americano e lo rappresentano solamente tramite delle sfumature di
+            colore. Ognuna di questa poi è stata posizionata a destra o a sinistra di una matrice a
+            seconda della distribuzione dei voti di chi vi abita. Il risultato è soddisfacente sia
+            nel voler confermare la tesi di partenza che dal punto di vista estetico. La
+            visualizzazione risulta particolarmente interessante perché la rappresentazione del
+            modulo (la fascia di territorio sfumata) è un&apos;astrazione derivante direttamente da
+            una foto ed è quindi molto fedele alla realtà. È come se si potesse vedere tutto il
+            territorio americano sgretolato e ricomposto come un puzzle. La visualizzazione finale,
+            divisa per stati, è esteticamente molto avanzata e crea artefatti singolari ma semplici
+            da interpretare. In questo, come in altri, il fine non è analitico, la volontà è quella
+            di restituire una mappa mentale che permetta in poco tempo di assimilare molto
+            informazioni che possano restare impresse nella memoria dell&apos;utente.
+            L&apos;utilizzo dei modelli visivi creati ad hoc permette
+            <br />
+            <br />
+            <a
+              href="https://www.nytimes.com/interactive/2020/09/02/upshot/america-political-spectrum.html"
+              target="blank"
+            >
+              Vai al progetto →
+            </a>
           </p>
-          <h3>Complexity vs Simplification, and why we need both</h3>
+
+          <Images image={img3_03} caption="" alt="" />
+          <h3>Shifting Smoke</h3>
           <p>
-            Whilst simplifying information could come in real handy to see key facts at a glance, it
-            should not be used as a methodology when designing data visualization. Removing
-            information from the big picture can very easily result in a counterproductive output,
-            making it actually harder to understand what is really going on. If a phenomenon has a
-            complex nature, then its complex structure needs to be communicated to the recipients in
-            order to enable understanding the issue. In this context, data visualization becomes the
-            portal to access complexity. A good strategy for designing complex visualizations is to
-            display multiple layers of information, so that the user can identify each layer and
-            focus either on one dimension at a time or on selected areas of the map.
+            Nell&apos;ultima estate i roghi che hanno colpito la costa orientale degli Stati Uniti
+            hanno impressionato molti, la nube di fumo ha coperto gran parte del paese e le regioni
+            limitrofe. La visualizzazione di Reuters mostra una mappa dello spostamento della nube
+            tra la metà di agosto e la metà di settembre. La rappresentazione è semplice, si tratta
+            di un&apos;immagine satellitare modificata per far risaltare la nube in modo che diventi
+            l&apos;unico oggetto colorato della visualizzazione. Il dato risalta su una mappa neutra
+            e può essere letto senza bisogno di numeri o modelli visivi particolari utili a
+            descriverlo. Nell&apos;articolo l&apos;astrazione rispetto al fenomeno è minima, vengono
+            mostrate le nuvole quasi come se queste fossero fotografate, alterando unicamente i
+            colori dell&apos;immagine. Si potrebbe supporre che delle immagini satellitari avrebbero
+            lo stesso effetto ma è evidente come i colori scelti siano volti ad amplificare
+            l&apos;immagine, tramite il contrasto dei colori le immagini risultano più
+            impressionanti e rendono più evidente la capacità della nube di inquinare tutto ciò con
+            cui viene a contatto. I dati mostrati non sono astratti in nessun modo, nonostante
+            questo l&apos;aspetto che più risalta nella visualizzazione è l&apos;impatto emotivo
+            creato dalla nube di fumo che si muove sulla terra.
+            <br />
+            <br />
+            <a
+              href="https://graphics.reuters.com/USA-WILDFIRE/POLLUTION/xlbpgjgervq/"
+              target="blank"
+            >
+              Vai al progetto →
+            </a>
           </p>
-          <Images
-            image={img3_01}
-            caption="The New York Times / A 3-D View of a Chart That Predicts The Economic Future: The Yield Curve. By Gregor Aisch and Amanda Cox"
-            alt="The New York Times / A 3-D View of a Chart That Predicts The Economic Future: The Yield Curve. By Gregor Aisch and Amanda Cox"
-          />
-          <Images
-            image={img3_02}
-            caption="The New York Times / A 3-D View of a Chart That Predicts The Economic Future: The Yield Curve. By Gregor Aisch and Amanda Cox"
-            alt="The New York Times / A 3-D View of a Chart That Predicts The Economic Future: The Yield Curve. By Gregor Aisch and Amanda Cox"
-          />
+
+          <Images image={img3_04} caption="" alt="" />
+          <h3>How randomized response can help collect sensitive information responsibly</h3>
           <p>
-            On the other hand, complexity of information does not mean complex visual solutions. On
-            the contrary, visual treatment can make a complex structure look simpler and more
-            accessible whilst retaining different and important layers of information. Each time the
-            design process is repeated, you should ask yourself if there is a way to make the
-            information that you are visualizing easier to read and understand for your target user.
-            Visual simplicity is a very effective strategy when applied to the storytelling of the
-            visualization.
+            I dati sensibili e la privacy sono tra i temi preponderanti nel dibattito pubblico, la
+            possibilità di lavorare con dataset che non si riferiscano a persone specifiche è
+            fondamentale per non trasmettere le informazioni private di un soggetto. Una possibilità
+            per mantenere le informazioni segrete è quella di scegliere casualmente solo una parte
+            delle risposte dal campione analizzato. Il processo non è molto intuitivo e per
+            spiegarlo Pair ha scritto un articolo a riguardo. Nell&apos;articolo proprio per via
+            della tematica complessa viene usata la datavisualization a supporto della narrazione.
+            In questo caso infatti leggere solamente il testo non è sufficiente, non si è in grado
+            di comprendere tutto ciò che viene descritto perché le didascalie fanno riferimento
+            direttamente alle immagini. II sito web presenta il tipico testo a scroll sulla sinistra
+            con delle animazioni che si generano man mano che la narrazione avviene. Tramite forme e
+            animazioni molto semplici viene comunicato e reso accessibile la teoria di una tecnica
+            che se sfruttata a dovere aiuta a mantenere l&apos;anonimato. Si tratta di un documento
+            tecnico e per questo le visualizzazioni non sono raffinate dal punto di vista estetico
+            ma la loro semplicità consente di leggerle con immediatezza e di seguire gli oggetti
+            nelle loro transazioni.
+            <br />
+            <br />
+            <a href="https://pair.withgoogle.com/explorables/anonymization/" target="blank">
+              Vai al progetto →
+            </a>
           </p>
-          <h3>The value of complexity</h3>
-          {/* <Images
-            image={img3_04}
-            caption="The sum of the parts is more meaningful of the single parts by themselves."
-          /> */}
-          <p>
-            We can appreciate the value of complexity when we start to think of it as being a
-            quality of the phenomenon, rather than an issue. Taking into account different parts of
-            a subject of study is to see and understand the bigger picture. The sum of the parts is
-            more meaningful than all parts viewed separately, as often there are aspects of the
-            phenomenon that can only emerge when all players and their behaviors are shown together,
-            are all put into relation with one another. Quoting Ewdard Tufte, “What is to be sought
-            in designs for the display of information is the clear portrayal of complexity. Not the
-            complication of the simple; rather the task of the designer is to give visual access to
-            the subtle and the difficult - that is, the revelation of the complex.”
-          </p>
-          <h3>We are curious beings</h3>
-          <p>
-            We are surrounded by phenomena that are intrinsically complex, and our attempts to
-            simplify them are aimed at understanding what we are looking at. But why do we visualize
-            our surroundings? We do that because we are inherently curious beings, and humans need
-            to find answers to explain what is around them. Time has changed the way we approach
-            this task, as we are now provided with new and different technologies that allow us to
-            do things that were once unimaginable. And yet the core drive remains the same, as seen
-            in chapter 1.1.
-          </p>
-          <Images
-            image={img3_03}
-            caption="The following images are a comparison of early analysis of solar spots and late ones. First: Letters on Sunspots (Istoria e Dimostrazioni intorno alle Macchie Solari) was a pamphlet written by Galileo Galilei in 1612. The Letters on Sunspots, was a continuation of Sidereus Nunicus, Galileo's first work where he publicly declared that he believed that the Copernican system was correct."
-            alt="The following images are a comparison of early analysis of solar spots and late ones. First: Letters on Sunspots (Istoria e Dimostrazioni intorno alle Macchie Solari) was a pamphlet written by Galileo Galilei in 1612. The Letters on Sunspots, was a continuation of Sidereus Nunicus, Galileo's first work where he publicly declared that he believed that the Copernican system was correct."
-          />
-          <Images
-            image={img3_04}
-            caption="An active region on the sun with dark sunspots. Image credit: NASA/SDO/AIA/HMI/Goddard Space Flight Center."
-            alt="An active region on the sun with dark sunspots. Image credit: NASA/SDO/AIA/HMI/Goddard Space Flight Center."
-          />
-          <p>
-            An excellent example are the drawings of sunspots observations, which Galileo Galilei
-            published in 1612. Today we can very easily study the same subject with instruments that
-            are more advanced than Galileo’s handcrafted telescope. The evolution of technological
-            means influences our investigation of the world, fueling the exploration of more complex
-            problems needed to satisfy our unstoppable curiosity.
-          </p>
-          <h3>Insight summary</h3>
-          <ol>
-            <li>
-              The value of data visualization resides in the ability to make complexity accessible
-              and readable.
-            </li>
-            <li>
-              Complexity is a quality of data and should be represented for what it is.
-              Simplification should be directed towards the storytelling, and should not be used to
-              cut down on the quantity of data.
-            </li>
-            <li>
-              Curiosity fuels our investigation of the world, and data visualization supports the
-              exploration of phenomena in a tangible way. This allows us to explain our findings.
-            </li>
-          </ol>
         </div>
       </div>
     )

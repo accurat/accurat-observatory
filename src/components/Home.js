@@ -83,6 +83,21 @@ export default class Home extends React.Component {
                 <h4>· The evolution of the American Census</h4>
                 <h4>· Explore the city on a human scale</h4>
               </ChapterCard>
+              <ChapterCard
+                idRef="1_3"
+                chapNum="3"
+                audience="2020, August"
+                readTime=""
+                title="Numero 03"
+                coverImg={img3}
+              >
+                <h4>· Coronavirus tracked</h4>
+                <h4>· The True Colors of America&apos;s Political Spectrum</h4>
+                <h4>· Shifting Smoke</h4>
+                <h4>
+                  · How randomized response can help collect sensitive information responsibly
+                </h4>
+              </ChapterCard>
             </div>
 
             <div className="ml4-l w-40-l dn db-l">
