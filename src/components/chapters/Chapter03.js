@@ -73,7 +73,6 @@ export default class Chapter03 extends React.Component {
             da interpretare. In questo, come in altri, il fine non è analitico, la volontà è quella
             di restituire una mappa mentale che permetta in poco tempo di assimilare molto
             informazioni che possano restare impresse nella memoria dell&apos;utente.
-            L&apos;utilizzo dei modelli visivi creati ad hoc permette
             <br />
             <br />
             <a
