@@ -37,6 +37,12 @@ export default class Menu extends React.Component {
           </div>
         </Link>
 
+        <Link to="#1_3" className="no-underline black db mv3" onClick={scrollBuilder('1_4')}>
+          <div className="w-100 flex flex-row">
+            <Tag label="2020, Sep" />
+            <p className="mv0 ml3 f5">1.4 Numero 04</p>
+          </div>
+        </Link>
         <div className="bg-gray" style={{ height: '1px' }} />
       </div>
     )

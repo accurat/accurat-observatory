@@ -98,6 +98,19 @@ export default class Home extends React.Component {
                   · How randomized response can help collect sensitive information responsibly
                 </h4>
               </ChapterCard>
+              <ChapterCard
+                idRef="1_4"
+                chapNum="4"
+                audience="2020, September"
+                readTime=""
+                title="Numero 04"
+                coverImg={img4}
+              >
+                <h4>· Esri CovidPulse</h4>
+                <h4>· Flooding in America</h4>
+                <h4>· Overview - A new perspective of how we change the Earth</h4>
+                <h4>· Their Names</h4>
+              </ChapterCard>
             </div>
 
             <div className="ml4-l w-40-l dn db-l">

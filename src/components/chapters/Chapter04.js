@@ -2,9 +2,10 @@ import React from 'react'
 import Images from '../Images'
 // import Notes from '../Notes'
 
-import img4_01 from '../../assets/M1_C4_img01.jpg'
-import img4_02 from '../../assets/M1_C4_img02.jpg'
-import img4_03 from '../../assets/M1_C4_img03.gif'
+import img4_01 from '../../assets/R4_img01.png'
+import img4_02 from '../../assets/R4_img02.png'
+import img4_03 from '../../assets/R4_img03.png'
+import img4_04 from '../../assets/R4_img04.png'
 
 export default class Chapter04 extends React.Component {
   componentDidMount() {
@@ -15,127 +16,125 @@ export default class Chapter04 extends React.Component {
   render() {
     return (
       <div>
-        <p className="chapter-breadcrumb mt4 mb2">Chapter 4</p>
+        <p className="chapter-breadcrumb mt4 mb2">Settembre 2020</p>
         <div>
-          <h2>Success stories</h2>
+          <h2>Numero 04</h2>
+          <Images image={img4_01} caption="" alt="" />
+          <h3>Esri CovidPulse</h3>
           <p>
-            So far you have learned important aspects about data visualization, the central
-            theoretical basis of the topic. In this chapter, you will see practical examples that
-            are proof of the value data visualization can have in the decision process. The most
-            important concept to learn in visualizing data is its relevance, this activity is often
-            mistaken for adornment, a final step of the process useful just to make things visually
-            better and to present them to others but reality is quite different and in this chapter
-            you’ll be able to understand its potential. The three case studies selected for this
-            module will offer an excellent validation of how data visualization can really be the
-            missing link to solve a problem —and sometimes even to save lives.
-          </p>
-          <h3>FOCUS 1 / 1854 Broad Street cholera outbreak</h3>
-
-          <p>
-            As the title of this focus may suggest, in 1854 England experienced a cholera outbreak,
-            part of the pandemic which took place worldwide between 1846–1860. People were dying at
-            increasing rates and no one seemed to be able to explain how the virus was spreading. It
-            was unclear whether the infection was airborne, transmitted by physical contact, carried
-            by animals or found in food sources.
-          </p>
-          <Images
-            image={img4_01}
-            caption="Original map by John Snow showing the clusters of cholera cases (indicated by stacked rectangles) in the London epidemic of 1854. The contaminated pump is located at the intersection of Broad Street and Cambridge Street (now Lexington Street), running into Little Windmill Street."
-            alt="Original map by John Snow showing the clusters of cholera cases (indicated by stacked rectangles) in the London epidemic of 1854. The contaminated pump is located at the intersection of Broad Street and Cambridge Street (now Lexington Street), running into Little Windmill Street."
-          />
-          <p>
-            John Snow, an English Physician, had the idea to mark out on a map where each deceased
-            person lived. Snow did not understand the mechanism by which the disease was
-            transmitted, but evidence led him to believe that it was not due to breathing foul air.
-            Based on the pattern of illness among residents, Snow hypothesized that cholera was
-            spread by an agent found in contaminated water. As a matter of fact, most of the deaths
-            occurred around a public water pump that supplied the nearby homes. Cholera ceased in
-            these places only a few days after switching to cleaner water sources.{' '}
+            Il Covid-19 ha colpito gli Stati Uniti in maniera particolarmente potente, il paese
+            conta oltre 300 milioni di abitanti e sono moltissimi i dati a disposizione sulla
+            situazione, di conseguenza diventa le analisi e le visualizzazioni relative. Il progetto
+            di Esri sviluppato da Jinnan Zhang e John Nelson risulta vincente nel descrivere
+            l&apos;andamento della pandemia nel tempo. La visualizzazione principale è composta da
+            una trendline per ogni area geografica, che si divide progressivamente
+            all&apos;aumentare dello zoom. Non sono presenti assi di riferimento ma solamente una
+            linea rossa che permette di leggere l&apos;andamento dei contagi nel tempo. Ad un
+            livello di dettaglio maggiore viene aggiunta la variabile del colore per aiutare nella
+            lettura delle informazioni che è fornita ancora da un unico elemento lineare.
+            L&apos;aspetto estetico dell&apos;artefatto rende semplice e immediato individuare le
+            anomalie in un panorama di crescita continua che risulta omogeneo. Al livello di zoom
+            più alto sono presenti varie trendline per ogni stato, queste sono colorate a seconda
+            dell&apos;andamento dei contagi. La visualizzazione risultante è così un ibrido fra una
+            heatmap e un linechart, una mappa che si sviluppa nel tempo che rende l&apos;artefatto
+            efficace anche dal punto di vista emotivo. Cliccando una delle trendline è possibile
+            leggere le informazioni dettagliate che essa rappresenta, le quali sono però nascoste
+            nella visualizzazione di base. Qui i linechart sono correlati di assi e valori puntuali
+            per permettere all&apos;utente anche una lettura analitica dell&apos;oggetto. La pulizia
+            estetica con cui è stata sviluppata la visualizzazione la rende piacevole da navigare e
+            chiara nei contenuti nonostante l&apos;enorme mole di informazioni raccontata e
+            riassunta, ad alto livello, con pochi segni grafici.
+            <br />
+            <br />
             <a
-              href="https://en.wikipedia.org/wiki/1854_Broad_Street_cholera_outbreak"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline-hover"
+              href="https://livingatlas.arcgis.com/covidpulse/#@=-81.931,40.374,6&trendCategories=1&trendType=0"
+              target="blank"
             >
-              Read more about the Broad Street cholera outbreak ↗
+              Vai al progetto →
             </a>
           </p>
-          <h3>FOCUS 2 / How the Circle Line rogue train was caught with data</h3>
 
+          <Images image={img4_02} caption="" alt="" />
+          <h3>Flooding in America</h3>
           <p>
-            In 2016, when the metro network of Singapore started to experience sudden disruptions,
-            no one had a clue as to their origin. During an initial analysis of the data, the
-            investigation was approached in a traditional way, with a statistical elaboration of
-            said data. However, no relevant insights emerged, as no correlation was found.
-            Additionally, the analysts did not really know what they were looking for, which made
-            solving this mystery even harder. A
-          </p>
-          <Images
-            image={img4_02}
-            caption="Once understood, the insight was confirmed by further analysis and visualizations. The visual model used to understand the problem was eventually used to check on different days and situations such as September 1, where the problem appears to be clearly linked to train PV46. Image from How the Circle Line rogue train was caught with data. Daniel Sim, Lee Shangqian and Clarence Ng."
-            alt="Once understood, the insight was confirmed by further analysis and visualizations. The visual model used to understand the problem was eventually used to check on different days and situations such as September 1, where the problem appears to be clearly linked to train PV46. Image from How the Circle Line rogue train was caught with data. Daniel Sim, Lee Shangqian and Clarence Ng."
-          />
-          <p>
-            t one point, they decided to try and analyze the problem in a visual way, using visual
-            models previously designed specifically to map train timetables. By doing this, their
-            trial shifted towards the right area. This allowed the data patterns to emerge in a
-            meaningful way. They discovered that the disruptions, mapped out in this visual model,
-            revealed a visual pattern identical to the movement of trains, but with opposite
-            direction to the latter. Because of this visual insight, it was possible to hypothesize
-            that the problem may have been caused by a different train than the ones affected by the
-            disruptions. This is a case where the right chart was used in the right context. Data
-            did not show the problem itself: they conveyed an image of the problem, the results of
-            measurements of the monitoring system.{' '}
-            <a
-              href="https://blog.data.gov.sg/how-we-caught-the-circle-line-rogue-train-with-data-79405c86ab6a"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline-hover"
-            >
-              Read more about the Circle Line rogue train ↗
+            Il cambiamento climatico sta portando un innalzamento di mari e oceani a livello globale
+            e di questo tratta il progetto sviluppato da The Pudding combinando diverse fonti di
+            dati. L&apos;obiettivo è quello di stabilire un coefficiente di rischio riguardo alle
+            inondazioni per varie aree geografiche degli Stati Uniti. Nell&apos;articolo il dataset
+            è raccontato in modi differenti nonostante quasi tutti i modelli visivi siano
+            rappresentati su mappe. La volontà di questo lavoro è anche quella di rendere le viz
+            pubbliche così che possano essere utilizzate da altri per arricchire pubblicazioni
+            sull&apos;argomento che necessitano visualizzazioni differenti a seconda della
+            narrazione a cui fanno riferimento. Due mappe, per esempio, possono essere visualizzate
+            evidenziando le contee o gli zipcode a seconda del livello di dettaglio che si vuole
+            ottenere nella visualizzazione. Una sezione notevole è quella che mette a confronto 2
+            diversi modelli di rischio per le inondazioni mostrando differenze e similitudini. È una
+            pratica complicate dal punto di vista della visualizzazione soprattutto se i dati sono
+            mostrati simultaneamente dal momento che derivano da modelli matematici differenti. Le
+            aree individuate da FEMA e First Street come “a rischio” nel futuro sono in parte
+            sovrapponibili ma in larga parte divergenti il che crea una certa confusione nella
+            rappresentazione anche per la scelta dei colori, rosso e blu. Viene da pensare che uno
+            dei due sia in qualche modo un dato positivo e uno negativo ma non è così, sarebbe stato
+            probabilmente più opportuno avere tre colori per indicare attribuendone uno alle
+            intersezioni presenti in modo da avere delle zone di “massimo rischio” perché
+            individuate da entrambi i modelli.
+            <br />
+            <br />
+            <a href="https://pudding.cool/projects/flooding/visuals/" target="blank">
+              Vai al progetto →
             </a>
           </p>
-          <h3>
-            FOCUS 3 / Same Stats, Different Graphs: Generating Datasets with Varied Appearance and
-            Identical Statistics through Simulated Annealing
-          </h3>
 
+          <Images image={img4_03} caption="" alt="" />
+          <h3>Overview - A new perspective of how we change the Earth</h3>
           <p>
-            As seen in chapter 1.3, sometimes simplification is not necessarily a positive thing to
-            do: summarizing a set of data points into a single number could hide the defining
-            characteristics of the issue. This becomes extremely relevant when studying statistical
-            phenomena and highlights the importance of using data visualization throughout an
-            analysis as well as choosing the right parameters to describe a set of data. This
-            example shows precisely this situation, and does so using visual representations of
-            profoundly different numeric distributions that are however very similar when averaged
-            out.
+            Overview è un progetto fotografico che mira a descrivere e raccontare il mondo usando
+            fotografie aeree zenitali che mostrano il paesaggio come un soggetto astratto tanto è
+            strana la sensazione prodotta da queste immagini. Siamo abituati ad essere a contatto
+            col paesaggio e comunque a non poter volare e guardare esattamente sotto i nostri piedi,
+            a poca distanza, un&apos;immagine fissa, ma con le tecnologie odierne ottenere questo
+            tipo di foto non è più così difficile. Il parallelismo fra aree urbanizzate, o comunque
+            in parte antropizzate, con gli artefatti visivi più disparati è diretto e forse un
+            po&apos; scontato, sono entrambi prodotti della razionalizzazione e capacità di
+            astrazione degli esseri umani. È comunque bizzarro constatare come alcune di queste foto
+            richiamino fortemente alcuni modelli visivi fra i più classici. All&apos;interno del
+            sito sono presenti delle sezioni di storie e time lapse che raccontano il cambiamento
+            del territorio nel tempo. Queste possono essere assimilate a visualizzazioni dal momento
+            che, raccogliendo il dato in maniera “scientifica” cioè fotografando la stessa porzione
+            di territorio nel tempo aiutano a raccogliere e trasmettere dati a chi le osserva. In
+            casi come questo non è necessario passare attraverso il filtro della dataviz dal momento
+            che il dato, il cambiamento nel tempo, è visibile e riconoscibile da chiunque e non ha
+            bisogno di essere spiegato o evidenziato in alcun modo.
+            <br />
+            <br />
+            <a href="https://www.over-view.com/stories" target="blank">
+              Vai al progetto →
+            </a>
           </p>
-          <Images
-            image={img4_03}
-            caption="The Datasaurus Dozen. While different in appearance, each dataset has the same summary statistics (mean, standard deviation, and Pearson's correlation) to two decimal places. From Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing. Justin Matejka, George Fitzmaurice."
-            alt="The Datasaurus Dozen. While different in appearance, each dataset has the same summary statistics (mean, standard deviation, and Pearson's correlation) to two decimal places. From Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing. Justin Matejka, George Fitzmaurice."
-          />
+
+          <Images image={img4_04} caption="" alt="" />
+          <h3>Their Names</h3>
           <p>
-            The Datasaurus Dozen. While different in appearance, each dataset has the same summary
-            statistics (mean, standard deviation, and Pearson‘s correlation) to two decimal places.
-            Each of these 13 datasets (the Datasaurus, plus 12 others) has the same summary
-            statistics (x/y mean, x/y standard deviation, and Pearson‘s correlation) to two decimal
-            places, while being drastically different in appearance. Visualization helps
-            understanding the nature of datasets and will come in hand when choosing which
-            parameters to use, which is crucial to make reliable analysis. From the graphical point
-            of view, since we now have the computational power and the technology to see things in
-            their entirety, we should aim at actually seeing these phenomena in full. In most cases,
-            you are not limited to samples anymore and you have the possibility to apply data
-            visualization to the entire set that you are researching. In this scenario, if you
-            decide to not visualize the big picture, you are likely to miss the inner mechanisms of
-            the phenomenon.{' '}
-            <a
-              href="https://www.autodeskresearch.com/publications/samestats"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline-hover"
-            >
-              Read more about the project Same Stats, Different Graphs ↗
+            Il progetto raccoglie i nomi di oltre 28.000 fra le persone che sono morte dopo essere
+            venute a contatto con la polizia. La forma dell&apos;artefatto è semplice, sfondo nero e
+            i nomi di ogni persona a riempire un lunghissimo muro di testo. È possibile leggere la
+            storia di ciascuna delle vittime per scoprire le cause del decesso. Their Names
+            impressiona sfruttando l&apos;interazione, il tempo per cui è necessario scrollare per
+            raggiungere la fine della lista anche senza leggere la storia di nessuno e la quantità
+            dei nomi che compaiono sotto gli occhi dell&apos;utente è destabilizzante. È possibile
+            nascondere i nomi e filtrare a seconda di alcuni parametri: età, sesso, etnia… In modo
+            da ottenere una sorta di visualizzazione in cui ogni persona è rappresentata da un
+            piccolo segno grafico. In questo progetto la visualizzazione ha un intento sia
+            divulgativo, raccontare le storie delle vittime, ma vuole soprattutto colpire
+            emotivamente l&apos;utente. Ognuna di queste persona viene ricordata attraverso il
+            proprio nome quasi a voler identificare in lui una persona familiare o vicina al
+            fruitore. È un esempio di come, riducendo al minimo le informazioni fornite e senza
+            dover mostrare nessuna immagine possano essere trasmessi moltissimi dati che rimangono
+            impressi nella memoria per la forte emotività legata all&apos;artefatto.
+            <br />
+            <br />
+            <a href="https://theirnames.org/" target="blank">
+              Vai al progetto →
             </a>
           </p>
         </div>
