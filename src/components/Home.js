@@ -111,6 +111,19 @@ export default class Home extends React.Component {
                 <h4>· Overview - A new perspective of how we change the Earth</h4>
                 <h4>· Their Names</h4>
               </ChapterCard>
+              <ChapterCard
+                idRef="1_5"
+                chapNum="5"
+                audience="2020, October"
+                readTime=""
+                title="Numero 05"
+                coverImg={img5}
+              >
+                <h4>· Reconstructing seven days of protests in Minneapolis</h4>
+                <h4>· 12 Sunset: Exploring Ed Ruscha’s Archive</h4>
+                <h4>· Color palettes and accessibility features for data visualization</h4>
+                <h4>· The Shape of Dreams</h4>
+              </ChapterCard>
             </div>
 
             <div className="ml4-l w-40-l dn db-l">

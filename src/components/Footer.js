@@ -6,6 +6,7 @@ const chaptersTitles = {
   '1_2': { module: '2020, July', title: 'Release 2' },
   '1_3': { module: '2020, August', title: 'Release 3' },
   '1_4': { module: '2020, September', title: 'Release 4' },
+  '1_5': { module: '2020, October', title: 'Release 5' },
 }
 
 export default class Footer extends React.Component {
@@ -43,7 +44,7 @@ export default class Footer extends React.Component {
         </div>
         <div>
           <>
-            {idRef === '1_4' ? (
+            {idRef === '1_5' ? (
               <div className="h-100 vw-50 bl kazoo" />
             ) : (
               <Link to={`/chapter/${next}`} className="no-underline">

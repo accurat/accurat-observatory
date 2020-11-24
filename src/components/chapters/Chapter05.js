@@ -2,11 +2,10 @@ import React from 'react'
 import Images from '../Images'
 // import Notes from '../Notes'
 
-import img5_01 from '../../assets/M1_C5_img01.jpg'
-import img5_02 from '../../assets/M1_C5_img02.jpg'
-import img5_03 from '../../assets/M1_C5_img03.jpg'
-import img5_04 from '../../assets/M1_C5_img04.jpg'
-import img5_05 from '../../assets/M1_C5_img05.jpg'
+import img4_01 from '../../assets/R5_img01.png'
+import img4_02 from '../../assets/R5_img02.png'
+import img4_03 from '../../assets/R5_img03.png'
+import img4_04 from '../../assets/R5_img04.png'
 
 export default class Chapter05 extends React.Component {
   componentDidMount() {
@@ -17,244 +16,120 @@ export default class Chapter05 extends React.Component {
   render() {
     return (
       <div>
-        <p className="chapter-breadcrumb mt4 mb2">Chapter 5</p>
+        <p className="chapter-breadcrumb mt4 mb2">Ottobre 2020</p>
         <div>
-          <h2>Data Visualization and AI</h2>
-          <h3>How can we use data visualization to represent and explain AI processes?</h3>
+          <h2>Numero 05</h2>
+          <Images image={img4_01} caption="" alt="" />
+          <h3>
+            Reconstructing seven days of protests in Minneapolis after George Floyd&apos;s death
+          </h3>
           <p>
-            It’s often hard to explain AI techniques. Why? their dynamism makes them complex and not
-            always clear for non-experts. Data visualization can provide the user with a way to
-            access the black box of AI processes, it can help to follow and explain what the
-            algorithm is doing and to make decisions based on the evolution of the process itself.
-          </p>
-          <h3>Accurat for Watson Studio</h3>
-          <p>
-            Accurat and the IBM Watson Studio team collaborated in 2018, designing a series of
-            visualizations made to explore and understand the nature of unstructured text data.
-            During the project the team focused on the two main aspects of the problem: the
-            representation of the content itself and the validation of the models created to analyze
-            it. These two approaches are designed to serve data scientists in two different
-            situations:
-          </p>
-          <ol>
-            <li>
-              Understanding.
-              <br /> As we mentioned in chapter 1.4, visually representing data can help to
-              understand its structure, in particular when its size requires this. This first
-              approach will help the engineer when framing the future analysis.
-            </li>
-            <li>
-              Validation
-              <br />
-              Once a machine learning model is designed, this tool will help to understand the
-              results and to refine details thanks to the possibility of going back and forth in the
-              process iterations.
-            </li>
-          </ol>
-          <Images
-            image={img5_01}
-            title="Customer Service sentiment analysis"
-            caption="The analysis has been conceived to give an image of the evolution of customer care conversation with clients. The goal is to visualize the changing satisfaction of the clients during the call (or chat) using the Sentiment Analysis services from Watson Studio."
-            alt="The analysis has been conceived to give an image of the evolution of customer care conversation with clients. The goal is to visualize the changing satisfaction of the clients during the call (or chat) using the Sentiment Analysis services from Watson Studio."
-          />
-          <Images
-            image={img5_02}
-            title="Scatterplot analysis (tweets, sentences, unstructured text)"
-            caption="The customizable scatterplot is an agnostic tool created to represent any kind of indicator or variables given by Watson Studio in the analysis of unstructured data (such as tweets and social media content). The visualization will be used to understand the structure of the dataset and its features, to foster a personal exploration of the corpus."
-            alt="The customizable scatterplot is an agnostic tool created to represent any kind of indicator or variables given by Watson Studio in the analysis of unstructured data (such as tweets and social media content). The visualization will be used to understand the structure of the dataset and its features, to foster a personal exploration of the corpus."
-          />
-          <Images
-            image={img5_03}
-            title="Occurrences analysis"
-            caption="This visual model has been created to allow a visual exploration and analysis of keywords’ role in long texts. Different layers of information allow the user to understand the changing subject of articles and large amount of texts."
-            alt="This visual model has been created to allow a visual exploration and analysis of keywords’ role in long texts. Different layers of information allow the user to understand the changing subject of articles and large amount of texts."
-          />
-          <Images
-            image={img5_04}
-            title="Machine Learning Validation"
-            caption="Visualizing the outputs of ML models it’s important to understand the effect of the algorithm directly on the data. This analysis has been designed to create a better way to validate the results of AI processes."
-            alt="Visualizing the outputs of ML models it’s important to understand the effect of the algorithm directly on the data. This analysis has been designed to create a better way to validate the results of AI processes."
-          />
-          <h3>Visualizing uncertainty</h3>
-          <p>
-            Uncertainty is an aspect of statistical calculations that should not be hidden away or
-            discarded when visually representing data. This is because it represents an important
-            piece of information that should be passed on to the readers, to whom it might be
-            valuable. Visualizing uncertainty becomes more relevant when AI is applied to represent
-            and track the evolution of the algorithms’ outputs, as statistical uncertainty is part
-            of the computation of forecast values. It is considered an added value to communicate
-            transparency on data and methods in the visualization, and you can display this by
-            clarifying the fact that you are statistically considering a range of probability,
-            rather than exact values (which are hypothetical). Showing uncertain values is a good
-            thing, but it should not be improvised. There are best practices that you should follow
-            in order to do so correctly, to make sure that the reader will be able to understand
-            which values are actual measures, as opposed to what is just a supposition. For example,
-            forecasts usually show mean values that are the most probable within a range or
-            distribution of possible values. You could start by simply visualizing the entire range
-            of values. Another option is to show the definite values with sharp visual features,
-            such as crisp lines and bold color fills, while using a different set of fuzzy visual
-            features when it comes to uncertain values, such as blurred borders, shapes, or using
-            different values of opacity. You can go even further in the visual treatment of the
-            visualization by using different styles for the graphs’ own structural elements, such as
-            switching from continuous to dotted lines for the axis, or differentiating the uncertain
-            section of the graph with a change of background color.{' '}
+            La vicenda di George Floyd è uno degli eventi scatenanti dell proteste del Black Live
+            Matters, ma ancora prima del movimento organizzato la popolazione di Minneapolis ha
+            manifestato per giorni dopo la morte dell&apos;afroamericano. Nel mondo del giornalismo
+            recente il ruolo del reporter può essere assunto da chiunque possieda uno smartphone e
+            registri gli avvenimenti. In contesti pericolosi o in cui accadono eventi inattesi è
+            spesso più semplice trovare immagini registrate con un telefono che non hanno
+            specificatamente lo scopo di raccontare la notizia ma piuttosto di mostrare ciò che
+            succede in un preciso momento. La forza di queste narrazioni accessibili a tutti è la
+            loro molteplicità, avendo a disposizione più video dello stesso evento è possibile
+            mostrarlo da ogni angolazione. Il Washington Post ha sfruttato questa narrazione
+            “plurale” per raccontare le proteste di Minneapolis in maniera originale.
+            L&apos;articolo è strutturato come una timeline verticale e ogni video è visualizzato
+            nel tempo e nello spazio come in un grafico Gantt. Questo permette a colpo d&apos;occhio
+            di capire quali sono i momenti che hanno più testimonianze a seconda anche della zona
+            della città in cui le proteste si sono svolte. È un modo nuovo di intendere il racconto
+            di una vicenda che sfrutta la visualizzazione dati per innovare anche nel campo del
+            giornalismo.
+            <br />
+            <br />
             <a
-              href="https://flowingdata.com/2018/01/08/visualizing-the-uncertainty-in-data/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline-hover"
+              href="https://www.washingtonpost.com/graphics/2020/national/live-stream-george-floyd-protests/"
+              target="blank"
             >
-              Read more about uncertainty ↗
+              Vai al progetto →
             </a>
           </p>
-          <br />
-          <Images
-            image={img5_05}
-            title="Representation of uncertain values"
-            caption="Visual representation of uncertain values on linechart. Image from the collavoration between Accurat and the IBM Watson Team."
-            alt="Visual representation of uncertain values on linechart. Image from the collaboration between Accurat and the IBM Watson Team."
-          />
-          <br />
-          <h3>Bias and ethic in Data Visualization</h3>
+
+          <Images image={img4_02} caption="" alt="" />
+          <h3>12 Sunset: Exploring Ed Ruscha&apos;s Archive</h3>
           <p>
-            One of the main concerns and tackled aspects of Artificial Intelligence, and of Machine
-            Learning in particular, consists of biases. Biases can be found in the training set or
-            in the algorithms alike, and biased prediction models can lead to veered results. There
-            are multiple ways in which we can try to minimize their impact{' '}
+            12 Sunset è un progetto di Ed Ruscha e del suo team i quali hanno composto un archivio
+            di foto sulla Sunset Boulevard anticipando il concetto alla base di Google Maps.
+            L&apos;intento di Ruscha era, probabilmente, quello di rappresentare i rapidi
+            cambiamenti nel panorama urbano nel corso del tempo scattando fotografie ad entrambi i
+            lati della strada e montandole in una sorta di infinita striscia. La parte più
+            interessante del progetto però è il metodo di fruizione attraverso cui questi materiali
+            possono essere esplorati. Il sito di archivio presente due fasce di foto, di cui una
+            capovolta fra cui è presente una mappa del percorso compiuto per scattare tutte le
+            fotografie. Scrollando l&apos;utente è in grado di muovere il veicolo presente nella
+            mappa ed esplorare tutte le foto con l&apos;impressione di trovarsi realmente a bordo
+            della vettura negli anni in cui le foto sono state scattate. È possibile anche duplicare
+            le “strisce” di foto per avere un confronto diretto del cambiamento del panorama nel
+            tempo. RIsulta un ottimo esempio di come un oggetto conosciuto come una serie di
+            fotografie possa diventare un artefatto completamente nuovo se raccontato nella giusta
+            maniera.
+            <br />
+            <br />
             <a
-              href="https://parametric.press/issue-01/the-myth-of-the-impartial-machine/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline-hover"
+              href="https://12sunsets.getty.edu/map/narrative?d=0.42256&mode=no-map"
+              target="blank"
             >
-              Read Parametric Press ↗
+              Vai al progetto →
             </a>
           </p>
+
+          <Images image={img4_03} caption="" alt="" />
+          <h3>Color palettes and accessibility features for data visualization</h3>
           <p>
-            Just as biases can be found in the output data, it becomes fundamental to be aware that
-            biases also concern the way we display data. There is a perverse branch in the
-            information visualization sphere that deals with how to stretch, skew and cut graphs to
-            show totally misleading representations that seem “trustworthy.” This practice is most
-            commonly used in politics or economic battles, where the disputant tries to earn consent
-            by finding support for their arguments in scientific-looking graphs, whilst in reality
-            they are an intentional distortion made to deceive our perception. A recent example and
-            analysis was published by the Washington Post in relation to Trump’s 2016 campaign:{' '}
+            IBM da poco più di un anno ha aggiornato le proprie libraries open source di design con
+            un occhio di riguardo per la Data Visualization. Il sistema è completamente open source
+            e punta anche a instaurare un dialogo per migliorare gli eventuali punti critici e
+            conoscere l&apos;impressione degli utenti. Nell&apos;articolo Medium dedicato una dei
+            componenti del team di data visualization, Shixie, racconta il processo che ha portato
+            alla definizione delle guidelines di IBM con particolare attenzione al colore. Il colore
+            è la variabile che spesso viene colta per prima e quella che influenza più fortemente la
+            lettura di una visualizzazione per l&apos;utente. È uno strumento molto forte per
+            instaurare relazioni fra oggetti o per isolarne, inoltre i colori a seconda delle
+            culture hanno già significati codificati e bisogna tenerne conto per usarli in maniera
+            consapevole. Un esempio tipico sono rosso e verde (male e bene) o il bianco che per gli
+            occidentali è un colore neutro e può rappresentare la pace mentre per i cinesi e i
+            giapponesi è legato alla morte. L&apos;articolo oltre a spiegare il processo fornisce
+            anche alcuni principi di base che sono utili a chiunque si approcci a capire o a
+            produrre una visualizzazione dati.
+            <br />
+            <br />
             <a
-              href="https://www.washingtonpost.com/graphics/politics/2016-election/trump-charts/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline-hover"
+              href="https://medium.com/carbondesign/color-palettes-and-accessibility-features-for-data-visualization-7869f4874fca"
+              target="blank"
             >
-              Read the Washington Post analysis ↗
+              Vai al progetto →
             </a>
           </p>
+
+          <Images image={img4_04} caption="" alt="" />
+          <h3>The Shape of Dreams</h3>
           <p>
-            In this context, it is a matter of ethics to remain neutral and show facts just as they
-            are, especially in contexts where our decision-making depends on visual evidence. Since
-            there are deceptive tricks that have proven to be very effective, it is important to
-            notice that two visualization built on the same dataset could produce two totally
-            different stories. An example that clearly renders this concept was made by the New York
-            Times:{' '}
-            <a
-              href="https://archive.nytimes.com/www.nytimes.com/interactive/2012/10/05/business/economy/one-report-diverging-perspectives.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline-hover"
-            >
-              Read The New York Times article ↗
+            Il progetto The Shape of Dreams di Federica Fragapane e Paolo Corti in collaborazione
+            con Simon Rogers e Alberto Cairo è un esperimento che si propone di visualizzare le
+            ricerche su Google riguardo ai sogni e alla loro interpretazione. L&apos;interpretazione
+            dei sogni è, per sua natura, una materia lontana dalla scienza e dai dati in senso
+            stretto ed è proprio per questo che il lavoro risulta interessante, nel cercare di unire
+            due mondi apparentementi inconciliabili. I dati rappresentati sono quelli dei Google
+            Trends relativi alle ricerche riguardanti gli oggetti, gli animali o gli accadimenti dei
+            sogni. Viene quindi fatta una sorta di macrofotografia narrata in quattro capitoli dei
+            sogni di tutta l&apos;umanità. I modelli visivi rispecchiano la scelta particolare della
+            narrazione e pur essendo abbastanza classici nel loro funzionamento vengono
+            rappresentati tramite forme che ricordano piante oniriche e colori tenui e tinte
+            pastello che richiamano all&apos;immaginario del riposo e del sogno. Come specificato
+            nella home il progetto è un&apos;esplorazione visiva, un esperimento per aprire nuovi
+            fronti della visualizzazione dati.
+            <br />
+            <br />
+            <a href="http://the-shape-of-dreams.com/#/" target="blank">
+              Vai al progetto →
             </a>
           </p>
-          <p>
-            Ethics is a fundamental aspect of working with data visualization, because the visual
-            representation of information can be used to communicate different messages, and it is
-            important to be conscious about the potential interpretations. Starting from the visual
-            model that you choose, the visual perception with which we make sense of the data
-            displayed can change dramatically.{' '}
-            <a
-              href="https://lenagroeger.s3.amazonaws.com/papers/BarsLines.pdf)"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline-hover"
-            >
-              Read more about ethics ↗
-            </a>
-          </p>
-          <p>Further reading:</p>
-          <ol>
-            <li>
-              <a
-                href="https://www.washingtonpost.com/graphics/politics/2016-election/trump-charts/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline-hover"
-              >
-                Tha Washington Post / John Muyskens: Most of Trump’s charts skew the data. And not
-                always in his favor. ↗
-              </a>
-            </li>
-            <li>
-              <a
-                href="http://www.thefunctionalart.com/2019/04/charts-that-lie.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline-hover"
-              >
-                Alberto Cairo: Charts that lie. ↗
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://parametric.press/issue-01/the-myth-of-the-impartial-machine/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline-hover"
-              >
-                Parametric press / Alice Feng & Shuyan Wu. The Myth of the Impartial Machine ↗
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.propublica.org/article/how-information-graphics-reveal-your-brains-blind-spots"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline-hover"
-              >
-                ProPublica / Lena V. Groeger: How Information Graphics Reveal Your Brain’s Blind
-                Spots ↗
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://medium.com/@blaisea/do-algorithms-reveal-sexual-orientation-or-just-expose-our-stereotypes-d998fafdf477"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline-hover"
-              >
-                Blaise Agüera y Arcas, Alexander Todorov & Margaret Mitchell: Do algorithms reveal
-                sexual orientation or just expose our stereotypes? ↗
-              </a>
-            </li>
-            <li>
-              <a
-                href=" https://www.nytimes.com/2015/07/10/upshot/when-algorithms-discriminate.html"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                The New York Times / Claire Cain Miller: When Algorithms Discriminate ↗
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://archive.nytimes.com/www.nytimes.com/interactive/2012/10/05/business/economy/one-report-diverging-perspectives.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline-hover"
-              >
-                The New York Times / Mike Bostock, Shan Carter, Amanda Cox & Kevin Quealy: One
-                Report, Diverging Perspectives ↗
-              </a>
-            </li>
-          </ol>
         </div>
       </div>
     )
