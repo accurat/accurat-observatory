@@ -6,6 +6,8 @@ import Chapter02 from './chapters/Chapter02'
 import Chapter03 from './chapters/Chapter03'
 import Chapter04 from './chapters/Chapter04'
 import Chapter05 from './chapters/Chapter05'
+import Chapter06 from './chapters/Chapter06'
+import Chapter07 from './chapters/Chapter07'
 
 import Header from './Header'
 import Footer from './Footer'
@@ -16,6 +18,8 @@ const texts = {
   '1_3': Chapter03,
   '1_4': Chapter04,
   '1_5': Chapter05,
+  '1_6': Chapter06,
+  '1_7': Chapter07,
 }
 
 const scrollBuilder = id => event => {
